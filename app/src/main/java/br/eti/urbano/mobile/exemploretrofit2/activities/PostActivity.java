@@ -38,7 +38,7 @@ public class PostActivity extends AppCompatActivity {
             public void onResponse(Call<List<Post>> call, Response<List<Post>> response) {
                 //Se deu certo executa este método
                 List<Post> posts = response.body();
-                posts.forEach(p-> Log.i  ("fasam",p.toString()));
+                posts.forEach(p-> Log.i  ("senai",p.toString()));
             }
 
             @Override
