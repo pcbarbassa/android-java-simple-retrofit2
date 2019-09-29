@@ -3,7 +3,6 @@ package br.eti.urbano.mobile.exemploretrofit2.resource;
 import java.util.List;
 
 import br.eti.urbano.mobile.exemploretrofit2.model.Album;
-import br.eti.urbano.mobile.exemploretrofit2.model.Post;
 import retrofit2.Call;
 import retrofit2.http.DELETE;
 import retrofit2.http.GET;
@@ -29,5 +28,5 @@ public interface AlbumResource {
     Call<Void> patch(Album album);
 
     @GET("/posts/{id}")
-    Call<List<Post>> get(Integer id);
+    Call<List<Album>> get(Integer id);
 }
